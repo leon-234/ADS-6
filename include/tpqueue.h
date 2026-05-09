@@ -34,7 +34,7 @@ class TPQueue {
     }
     T pop() {
         if (head == nullptr) {
-            throw std::out_of_range("Queue is empty");
+            return T();
         }
         Node* temp = head;
         T value = head->data;
