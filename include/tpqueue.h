@@ -13,7 +13,7 @@ class TPQueue {
     };
     Node* head;
 
-  public:
+ public:
     TPQueue() : head(nullptr) {}
     ~TPQueue() {
         clear();
@@ -26,7 +26,7 @@ class TPQueue {
             return;
         }
         Node* current = head;
-        while (current->next != nullptr && 
+        while (current->next != nullptr &&
           current->next->data.prior >= value.prior) {
             current = current->next;
         }
